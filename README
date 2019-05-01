@@ -1,1 +1,18 @@
-This is a MPI git repo
+#################################################################################################
+
+
+
+Authors: 	Gabriel Toban, Toheeb Biala and Khem Poudel
+
+
+
+#################################################################################################
+
+
+This program implements the orthogonal recursive bisection. The program may be run as follows:
+
+1. Edit the qsub file for your directory. The first and second arguments to the program in the last line (mpirun ...) are the number of datapoints  and targets to be used in the simulation.
+2. The read functions should also be edited. The file path in functions "functionsFiles.c" on lines 72, 101, 131, 148 and in function "main.c" on line 143 should be edited as well.
+3. make
+4. The program is run using the python script named "runqsub.py"
+5. All results are printed to the file named "output.txt"

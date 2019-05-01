@@ -1,0 +1,10 @@
+!#/bin/bash
+
+
+#$ -N main
+#$ -pe mpi 99
+#$ -q amd.q
+
+
+mpirun -np $NSLOTS $HOME/COMS7900/commtest  > $HOME/COMS7900/commout.txt
+

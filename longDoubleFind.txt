@@ -1,0 +1,66 @@
+commtest.c:41:  float xyz[3];
+functionsAllToAllv.c:58:  float *sends=(float*) send;
+functionsAllToAllv.c:99:  float * send_array = (float *) send;
+functionsAllToAllv.c:100:  float * recv_array = (float *) recv;
+functionsCreateType.c:31:  MPI_Type_create_resized(MPI_FLOAT, 0, sizeof(float), &ld_type);
+functionsData.c:22:  float *p1 = (float *) s1;
+functionsData.c:23:  float  *p2 = (float *) s2;
+functionsFiles.c:14:  float x,y,z;
+functionsFiles.c:22:      fread(&x,sizeof(float),1,fp); 
+functionsFiles.c:23:      fread(&y,sizeof(float),1,fp); 
+functionsFiles.c:24:      fread(&z,sizeof(float),1,fp); 
+functionsFiles.c:47:  float x,y,z;
+functionsFiles.c:54:  size_t dataSize = sizeof(long long int) +  3*sizeof(float);
+functionsFiles.c:90:      //fread(&temp.xyz[0],sizeof(float),1,fp); 
+functionsFiles.c:91:      //fread(&temp.xyz[1],sizeof(float),1,fp); 
+functionsFiles.c:92:      //fread(&temp.xyz[2],sizeof(float),1,fp); 
+functionsFiles.c:94:      fread(&x,sizeof(float),1,fp); 
+functionsFiles.c:95:      fread(&y,sizeof(float),1,fp); 
+functionsFiles.c:96:      fread(&z,sizeof(float),1,fp); 
+functionsFiles.c:146:	  fread(&temp.xyz[0],sizeof(float),1,fp);
+functionsFiles.c:147:	  fread(&temp.xyz[1],sizeof(float),1,fp);
+functionsFiles.c:148:	  fread(&temp.xyz[2],sizeof(float),1,fp);
+functionsGlobalSeqTree.c:36:  float radToMax=0, radToMin=0;
+functionsGlobalSeqTree.c:71:void getLargestDimensionGlobal(float *arrayMax, float *arrayMin, int *colIndex){
+functionsGlobalSeqTree.c:72:  float range = arrayMax[0] - arrayMin[0];
+functionsGlobalSeqTree.c:85:void getMaxMinGlobal(void* varray, int size,  int colIndex, float *arrayMax, float *arrayMin){
+functionsGlobalSeqTree.c:87:  float *allMax = (float *) malloc(3 * num_ranks * sizeof(float));
+functionsGlobalSeqTree.c:88:  float *allMin = (float *) malloc(3 * num_ranks * sizeof(float));
+functionsSeqSearch.c:4:  float targetDir[3], targetPoint[3], targetMagnitude = 0, testRadius=0;//, dist = 0;
+functionsSeqTree.c:48:  float radToMax=0, radToMin=0;
+functionsSeqTree.c:79:void getLargestDimension(float *arrayMax, float *arrayMin, int *colIndex){
+functionsSeqTree.c:80:  float range = arrayMax[0] - arrayMin[0];
+functionsSeqTree.c:93:void getMaxMin(void* varray, int size,  int colIndex, float *arrayMax, float *arrayMin){
+functionsSort.c:7:  float* nodeDivL = (float *) malloc((num_ranks+2)*sizeof(float));
+functionsSort.c:9:  float* LDivinfo = (float *) malloc(((num_ranks+2)*num_ranks)*sizeof(float));
+functionsSort.c:10:  float* LDiv = (float *) malloc(((num_ranks)*num_ranks)*sizeof(float));
+functionsSort.c:11:  float* L = (float *) malloc((num_ranks+1)*sizeof(float));
+functionsSort.c:12:  float totalMax; // = LDivinfo[num_ranks];
+functionsSort.c:83:  qsort(LDiv, (num_ranks)*num_ranks, sizeof(float), compare_longfloat);
+functionsSort.c:119:// rangeLi float [num_ranks] L[i+1] - L[i-1] index 0 is blank
+functionsSort.c:120:// totalRange float L[num_ranks] - L[0]
+functionsSort.c:121:// smallest float min[array[i+1] - array[i]] > 0
+functionsSort.c:123:// smallestDiffL float [num_ranks] L at smallestDiff
+functionsSort.c:133:  float* L = (float *) vL;
+functionsSort.c:144:  float rangeL[num_ranks];
+functionsSort.c:145:  float myrange;
+functionsSort.c:146:  float totalRange = L[num_ranks] - L[0];
+functionsSort.c:147:  float smallest;
+functionsSort.c:148:  float mysmallest;
+functionsSort.c:149:  float * allSmallest = (float *) malloc(num_ranks*sizeof(float));
+functionsSort.c:152:  float smallestDiffL[num_ranks];
+functionsSort.c:371:  float* L = (float *) vL;
+functionsSort.c:375:  float totalMax; // = LDivinfo[num_ranks];
+functionsSort.c:517:  float  *L = (float *) vL;
+functionsTrees.c:6:  float dist = 0.0;
+functionsTrees.c:54:  float dist = 0.0;
+functionsTrees.c:99:  float radToMax=0, radToMin=0;
+functionsTrees.c:154:  float targetDir[3], targetPoint[3], targetMagnitude = 0, testRadius=0;//, dist = 0;
+functionsTrees.c:237:  float targetDir[3], targetPoint[3], targetMagnitude = 0, testRadius=0;//, dist = 0;
+functionsTrees.c:253:  float targetDir[3], targetPoint[3], targetMagnitude = 0, testRadius=0;//, dist = 0;
+functionsTrees.c:302:  float targetDir[3], targetPoint[3], targetMagnitude = 0, testRadius=0;//, dist = 0;
+functionsTrees.c:336:  float targetDir[3], targetPoint[3], targetMagnitude = 0, testRadius=0;//, dist = 0;
+functionsTrees.c:402:  float *allDummy = (float *) malloc(3 * num_ranks * sizeof(float));
+verify.c:3:void verify(float min, float max){
+verify.c:5:  float min_max[2] = {min, max};
+verify.c:6:  float * temp = (float *) malloc(2 * num_ranks * sizeof(float));

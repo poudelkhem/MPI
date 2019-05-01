@@ -1,0 +1,6 @@
+N = number of nodes aka num_ranks
+num = number of elements on each node
+total = number of elements across all nodes
+nodeL = lower limits, nodemax, and num from all nodes (in that order)
+Linfo = N lower limits + totalmax + total
+L = N lower limits

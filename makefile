@@ -1,8 +1,25 @@
-#!/bin/bash
+
+functions= prof_main.o \
+	functionsFiles.o \
+	functionsData.o \
+	functionsSort.o \
+	functionsAllToAllv.o \
+	functionsCreateType.o \
+	temp.o \
+	timestamp.o \
+	verify.o \
+	functionsSeqTree.o \
+	functionsGlobalSeqTree.o \
+	functionsGlobalSort.o \
+	functionsSeqSearch.o \
+	functionsTrees.o
+
+prof_main: $(functions)
+	mpicc -o prof_main $(functions) -lm
 
 
-test2: test2.c
-	mpicc -o test2 test2.c
+%.o: %.c headerFuncs.h
+	mpicc -c -o $@ $< -I.
 
 clean:
-	rm *~ test2
+	rm *~ prof_main *.o

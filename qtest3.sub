@@ -1,0 +1,5 @@
+!#/bin/bash
+#$ -N main
+#$ -pe mpi 128
+#$ -q intel.q
+mpirun -np $NSLOTS $HOME/Final/prof_main 100000000 20000000 2>> $HOME/Final/error.txt 1>> $HOME/Final/time.txt  
